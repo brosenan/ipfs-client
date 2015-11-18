@@ -15,3 +15,15 @@ var ipfs = require('ipfs-client');
 var stream = ipfs.cat('QmTE9Xp76E67vkYeygbKJrsVj8W2LLcyUifuMHMEkyRfUL');
 stream.pipe(process.stdout);
 ```
+
+### add - Store the Content of a Stream
+Provides a hash in return.
+
+Example:
+```js
+var ipfs = require('ipfs-client');
+
+ipfs.add(process.stdin, function(err, hash) {
+    console.log(hash);
+});
+```
