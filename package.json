@@ -1,6 +1,6 @@
 {
   "name": "ipfs-client",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Node.JS client library for the Inter-Planetary File System",
   "main": "index.js",
   "scripts": {
