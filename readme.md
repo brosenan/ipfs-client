@@ -1,27 +1,14 @@
-# TOC
-   - [add(stream, cb(err, hash))](#addstream-cberr-hash)
-   - [cat(hash)](#cathash)
-<a name=""></a>
+# IPFS Node.JS Client
+This library is a simple client for the [InterPlanetary File System](http://ipfs.io).  It currently supports the operations of storing and retrieving file content in IPFS.
+
+## Installing
+ npm --save install ipfs-client
+
+## API
+### cat - Streaming content out of IPFS
+Example:
+ var ipfs = require('ipfs-client');
  
-<a name="addstream-cberr-hash"></a>
-# add(stream, cb(err, hash))
-should return a hash of the given stream.
-
-```js
-$S.run(gen, done);
-```
-
-<a name="cathash"></a>
-# cat(hash)
-should return a readable stream producing the file underlying the hash.
-
-```js
-$S.run(gen, done);
-```
-
-should report error if hash is not found.
-
-```js
-$S.run(gen, done);
-```
+ var stream = ipfs.cat('QmTE9Xp76E67vkYeygbKJrsVj8W2LLcyUifuMHMEkyRfUL');
+ stream.pipe(process.stdout);
 
