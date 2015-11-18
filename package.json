@@ -1,0 +1,20 @@
+{
+  "name": "ipfs-client",
+  "version": "1.0.0",
+  "description": "A Node.JS client library for the Inter-Planetary File System",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha -C -R dot"
+  },
+  "keywords": [
+    "ipfs"
+  ],
+  "author": "Boaz Rosenan <brosenan@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "suspend": "^0.6.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  }
+}
